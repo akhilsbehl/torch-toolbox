@@ -26,6 +26,12 @@ local function w_init_xavier_caffe(fan_in, fan_out)
    return math.sqrt(1/fan_in)
 end
 
+-- "Delving Deep into Rectifiers: Surpassing Human-Level Performance on ImageNet Classification"
+-- Kaiming He, 2015
+-- http://andyljones.tumblr.com/post/110998971763/an-explanation-of-xavier-initialization
+local function w_init_kaiming_caffe(fan_in, fan_out)
+   return math.sqrt(2/(fan_in))
+end
 
 -- "Delving Deep into Rectifiers: Surpassing Human-Level Performance on ImageNet Classification"
 -- Kaiming He, 2015
