@@ -47,7 +47,7 @@ local function w_init(net, arg)
    elseif arg == 'xavier'       then method = w_init_xavier
    elseif arg == 'xavier_caffe' then method = w_init_xavier_caffe
    elseif arg == 'kaiming'      then method = w_init_kaiming
-   elseif arg == 'kaming_caffe' then method = w_init_kaiming_caffe
+   elseif arg == 'kaiming_caffe' then method = w_init_kaiming_caffe
    else
       assert(false)
    end
